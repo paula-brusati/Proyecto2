@@ -1,11 +1,215 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hola Mundo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expreso Suroeste</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Hola mundo</h1>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar__brand">Expreso Suroeste</div>
+    <nav class="navbar__nav">
+      <a href="#inicio" class="navbar__link navbar__link--active">Inicio</a>
+      <a href="#servicios" class="navbar__link">Servicios</a>
+      <a href="#horarios" class="navbar__link">Horarios</a>
+      <a href="#" class="navbar__btn">Back to start</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <p class="hero__eyebrow">
+      <span class="hero__eyebrow-icon">⊙</span> EXCELENCIA REGIONAL
+    </p>
+    <h1 class="hero__title">Expreso Suroeste</h1>
+    <p class="hero__subtitle">
+      Diseñado para estudiantes y familias. Unimos el corazón de Buenos Aires<br />
+      con el sudoeste a través de un servicio fluido, puntual y de alta gama.
+    </p>
+    <div class="hero__actions">
+      <a href="#horarios" class="btn btn--primary">Buscar Pasajes</a>
+      <a href="#horarios" class="btn btn--outline">Ver Horarios</a>
+    </div>
+  </section>
+
+  <!-- RUTA + PARADAS -->
+  <section class="route" id="servicios">
+    <div class="route__card route__card--map">
+      <div class="route__map-header">
+        <span class="route__map-icon">⇅</span>
+        <h2 class="route__map-title">Conectando la Ruta 205</h2>
+        <p class="route__map-subtitle">Una traza estratégica diseñada para su comodidad.</p>
+      </div>
+      <div class="route__map-img-wrap">
+        <img
+          src="images/mapa-ruta.jpg"
+          alt="Mapa de la Ruta 205"
+          class="route__map-img"
+          width="380"
+          height="320"
+        />
+      </div>
+    </div>
+
+    <div class="route__card route__card--stops">
+      <p class="route__stops-label">Nuestras Paradas</p>
+      <ol class="stops">
+        <li class="stops__item">
+          <span class="stops__dot stops__dot--empty"></span>
+          <div class="stops__info">
+            <strong class="stops__name stops__name--highlight">Cabecera Almagro</strong>
+            <span class="stops__desc">Parque Rivadavia - CABA</span>
+          </div>
+        </li>
+        <li class="stops__item">
+          <span class="stops__dot stops__dot--empty"></span>
+          <div class="stops__info">
+            <strong class="stops__name">Parada Ezeiza</strong>
+            <span class="stops__desc">Centro de Trasbordo</span>
+          </div>
+        </li>
+        <li class="stops__item">
+          <span class="stops__dot stops__dot--empty"></span>
+          <div class="stops__info">
+            <strong class="stops__name">Terminal Cañuelas</strong>
+            <span class="stops__desc">Polos Universitarios</span>
+          </div>
+        </li>
+        <li class="stops__item">
+          <span class="stops__dot stops__dot--empty"></span>
+          <div class="stops__info">
+            <strong class="stops__name">Parada Uribelarrea</strong>
+            <span class="stops__desc">Acceso Turístico</span>
+          </div>
+        </li>
+        <li class="stops__item">
+          <span class="stops__dot stops__dot--filled"></span>
+          <div class="stops__info">
+            <strong class="stops__name stops__name--highlight">Terminal Lobos</strong>
+            <span class="stops__desc">Destino Final</span>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- HORARIOS -->
+  <section class="schedule" id="horarios">
+    <div class="schedule__header">
+      <div>
+        <h2 class="schedule__title">Horarios Próximos</h2>
+        <p class="schedule__subtitle">Servicios expresos con frecuencia cada 30 minutos.</p>
+      </div>
+      <div class="schedule__tabs">
+        <button class="schedule__tab schedule__tab--active">IDA</button>
+        <button class="schedule__tab">VUELTA</button>
+      </div>
+    </div>
+
+    <table class="timetable">
+      <thead>
+        <tr class="timetable__head-row">
+          <th class="timetable__th">SALIDA</th>
+          <th class="timetable__th">ORIGEN</th>
+          <th class="timetable__th">DESTINO</th>
+          <th class="timetable__th">ESTADO</th>
+          <th class="timetable__th timetable__th--right">TARIFA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="timetable__row">
+          <td class="timetable__td timetable__td--time">07:30</td>
+          <td class="timetable__td">Almagro (CABA)</td>
+          <td class="timetable__td">Lobos</td>
+          <td class="timetable__td">
+            <span class="badge badge--on-time">● A tiempo</span>
+          </td>
+          <td class="timetable__td timetable__td--right">$4.200</td>
+        </tr>
+        <tr class="timetable__row">
+          <td class="timetable__td timetable__td--time">08:15</td>
+          <td class="timetable__td">Almagro (CABA)</td>
+          <td class="timetable__td">Cañuelas</td>
+          <td class="timetable__td">
+            <span class="badge badge--delayed">● Demorado (10m)</span>
+          </td>
+          <td class="timetable__td timetable__td--right">$3.800</td>
+        </tr>
+        <tr class="timetable__row">
+          <td class="timetable__td timetable__td--time">09:00</td>
+          <td class="timetable__td">Almagro (CABA)</td>
+          <td class="timetable__td">Lobos</td>
+          <td class="timetable__td">
+            <span class="badge badge--on-time">● A tiempo</span>
+          </td>
+          <td class="timetable__td timetable__td--right">$4.200</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ACCESIBILIDAD -->
+  <section class="accessibility" id="accesibilidad">
+    <div class="accessibility__content">
+      <h2 class="accessibility__title">Compromiso con la<br />Accesibilidad</h2>
+      <p class="accessibility__lead">
+        Creemos que el transporte debe ser universal.<br />
+        Nuestras unidades están equipadas con la última<br />
+        tecnología para garantizar un viaje seguro para todos.
+      </p>
+      <ul class="accessibility__list">
+        <li class="accessibility__item">
+          <span class="accessibility__icon">♿</span>
+          <div>
+            <strong class="accessibility__feature">Unidades con rampa automatizada</strong>
+            <p class="accessibility__feature-desc">Acceso nivelado y seguro en todas las paradas principales.</p>
+          </div>
+        </li>
+        <li class="accessibility__item">
+          <span class="accessibility__icon">🦽</span>
+          <div>
+            <strong class="accessibility__feature">Asientos adaptados</strong>
+            <p class="accessibility__feature-desc">Espacios amplios reservados para personas con movilidad reducida.</p>
+          </div>
+        </li>
+        <li class="accessibility__item">
+          <span class="accessibility__icon">🔔</span>
+          <div>
+            <strong class="accessibility__feature">Alertas visuales y sonoras</strong>
+            <p class="accessibility__feature-desc">Notificaciones en tiempo real para pasajeros con discapacidad sensorial.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="accessibility__img-wrap">
+      <img
+        src="images/interior-bus.jpg"
+        alt="Interior accesible del bus"
+        class="accessibility__img"
+        width="480"
+        height="340"
+      />
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <span class="footer__brand">Expreso Suroeste</span>
+      <p class="footer__copy">© 2024 Expreso Suroeste. Excelencia en transporte regional.</p>
+    </div>
+    <nav class="footer__nav">
+      <a href="#servicios" class="footer__link">Servicios</a>
+      <a href="#horarios" class="footer__link">Horarios</a>
+      <a href="#accesibilidad" class="footer__link">Accesibilidad</a>
+      <a href="#" class="footer__link">Contacto</a>
+      <a href="#" class="footer__link">Privacidad</a>
+    </nav>
+  </footer>
+
 </body>
 </html>
