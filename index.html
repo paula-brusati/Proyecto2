@@ -1,215 +1,602 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Expreso Suroeste</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Expreso Suroeste</title>
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="navbar__brand">Expreso Suroeste</div>
-    <nav class="navbar__nav">
-      <a href="#inicio" class="navbar__link navbar__link--active">Inicio</a>
-      <a href="#servicios" class="navbar__link">Servicios</a>
-      <a href="#horarios" class="navbar__link">Horarios</a>
-      <a href="#" class="navbar__btn">Back to start</a>
-    </nav>
-  </header>
+    <header class="navbar">
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <p class="hero__eyebrow">
-      <span class="hero__eyebrow-icon">⊙</span> EXCELENCIA REGIONAL
-    </p>
-    <h1 class="hero__title">Expreso Suroeste</h1>
-    <p class="hero__subtitle">
-      Diseñado para estudiantes y familias. Unimos el corazón de Buenos Aires<br />
-      con el sudoeste a través de un servicio fluido, puntual y de alta gama.
-    </p>
-    <div class="hero__actions">
-      <a href="#horarios" class="btn btn--primary">Buscar Pasajes</a>
-      <a href="#horarios" class="btn btn--outline">Ver Horarios</a>
-    </div>
-  </section>
+        <div class="navbar__brand">
 
-  <!-- RUTA + PARADAS -->
-  <section class="route" id="servicios">
-    <div class="route__card route__card--map">
-      <div class="route__map-header">
-        <span class="route__map-icon">⇅</span>
-        <h2 class="route__map-title">Conectando la Ruta 205</h2>
-        <p class="route__map-subtitle">Una traza estratégica diseñada para su comodidad.</p>
-      </div>
-      <div class="route__map-img-wrap">
-        <img
-          src="mapa-ruta.png"
-          alt="Mapa de la Ruta 205"
-          class="route__map-img"
-          width="380"
-          height="320"
-        />
-      </div>
-    </div>
+            <img src="logo.png" alt="Logo Expreso Suroeste" class="navbar__logo">
 
-    <div class="route__card route__card--stops">
-      <p class="route__stops-label">Nuestras Paradas</p>
-      <ol class="stops">
-        <li class="stops__item">
-          <span class="stops__dot stops__dot--empty"></span>
-          <div class="stops__info">
-            <strong class="stops__name stops__name--highlight">Cabecera Almagro</strong>
-            <span class="stops__desc">Parque Rivadavia - CABA</span>
-          </div>
-        </li>
-        <li class="stops__item">
-          <span class="stops__dot stops__dot--empty"></span>
-          <div class="stops__info">
-            <strong class="stops__name">Parada Ezeiza</strong>
-            <span class="stops__desc">Centro de Trasbordo</span>
-          </div>
-        </li>
-        <li class="stops__item">
-          <span class="stops__dot stops__dot--empty"></span>
-          <div class="stops__info">
-            <strong class="stops__name">Terminal Cañuelas</strong>
-            <span class="stops__desc">Polos Universitarios</span>
-          </div>
-        </li>
-        <li class="stops__item">
-          <span class="stops__dot stops__dot--empty"></span>
-          <div class="stops__info">
-            <strong class="stops__name">Parada Uribelarrea</strong>
-            <span class="stops__desc">Acceso Turístico</span>
-          </div>
-        </li>
-        <li class="stops__item">
-          <span class="stops__dot stops__dot--filled"></span>
-          <div class="stops__info">
-            <strong class="stops__name stops__name--highlight">Terminal Lobos</strong>
-            <span class="stops__desc">Destino Final</span>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
+            <span>Expreso Suroeste</span>
 
-  <!-- HORARIOS -->
-  <section class="schedule" id="horarios">
-    <div class="schedule__header">
-      <div>
-        <h2 class="schedule__title">Horarios Próximos</h2>
-        <p class="schedule__subtitle">Servicios expresos con frecuencia cada 30 minutos.</p>
-      </div>
-      <div class="schedule__tabs">
-        <button class="schedule__tab schedule__tab--active">IDA</button>
-        <button class="schedule__tab">VUELTA</button>
-      </div>
-    </div>
+        </div>
 
-    <table class="timetable">
-      <thead>
-        <tr class="timetable__head-row">
-          <th class="timetable__th">SALIDA</th>
-          <th class="timetable__th">ORIGEN</th>
-          <th class="timetable__th">DESTINO</th>
-          <th class="timetable__th">ESTADO</th>
-          <th class="timetable__th timetable__th--right">TARIFA</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="timetable__row">
-          <td class="timetable__td timetable__td--time">07:30</td>
-          <td class="timetable__td">Almagro (CABA)</td>
-          <td class="timetable__td">Lobos</td>
-          <td class="timetable__td">
-            <span class="badge badge--on-time">● A tiempo</span>
-          </td>
-          <td class="timetable__td timetable__td--right">$4.200</td>
-        </tr>
-        <tr class="timetable__row">
-          <td class="timetable__td timetable__td--time">08:15</td>
-          <td class="timetable__td">Almagro (CABA)</td>
-          <td class="timetable__td">Cañuelas</td>
-          <td class="timetable__td">
-            <span class="badge badge--delayed">● Demorado (10m)</span>
-          </td>
-          <td class="timetable__td timetable__td--right">$3.800</td>
-        </tr>
-        <tr class="timetable__row">
-          <td class="timetable__td timetable__td--time">09:00</td>
-          <td class="timetable__td">Almagro (CABA)</td>
-          <td class="timetable__td">Lobos</td>
-          <td class="timetable__td">
-            <span class="badge badge--on-time">● A tiempo</span>
-          </td>
-          <td class="timetable__td timetable__td--right">$4.200</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+        <nav class="navbar__nav">
 
-  <!-- ACCESIBILIDAD -->
-  <section class="accessibility" id="accesibilidad">
-    <div class="accessibility__content">
-      <h2 class="accessibility__title">Compromiso con la<br />Accesibilidad</h2>
-      <p class="accessibility__lead">
-        Creemos que el transporte debe ser universal.<br />
-        Nuestras unidades están equipadas con la última<br />
-        tecnología para garantizar un viaje seguro para todos.
-      </p>
-      <ul class="accessibility__list">
-        <li class="accessibility__item">
-          <span class="accessibility__icon">♿</span>
-          <div>
-            <strong class="accessibility__feature">Unidades con rampa automatizada</strong>
-            <p class="accessibility__feature-desc">Acceso nivelado y seguro en todas las paradas principales.</p>
-          </div>
-        </li>
-        <li class="accessibility__item">
-          <span class="accessibility__icon">🦽</span>
-          <div>
-            <strong class="accessibility__feature">Asientos adaptados</strong>
-            <p class="accessibility__feature-desc">Espacios amplios reservados para personas con movilidad reducida.</p>
-          </div>
-        </li>
-        <li class="accessibility__item">
-          <span class="accessibility__icon">🔔</span>
-          <div>
-            <strong class="accessibility__feature">Alertas visuales y sonoras</strong>
-            <p class="accessibility__feature-desc">Notificaciones en tiempo real para pasajeros con discapacidad sensorial.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="accessibility__img-wrap">
-      <img
-        src="interior-bus.png"
-        alt="Interior accesible del bus"
-        class="accessibility__img"
-        width="480"
-        height="340"
-      />
-    </div>
-  </section>
+            <a href="#inicio">Inicio</a>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer__top">
-      <span class="footer__brand">Expreso Suroeste</span>
-      <p class="footer__copy">© 2024 Expreso Suroeste. Excelencia en transporte regional.</p>
-    </div>
-    <nav class="footer__nav">
-      <a href="#servicios" class="footer__link">Servicios</a>
-      <a href="#horarios" class="footer__link">Horarios</a>
-      <a href="#accesibilidad" class="footer__link">Accesibilidad</a>
-      <a href="#" class="footer__link">Contacto</a>
-      <a href="#" class="footer__link">Privacidad</a>
-    </nav>
-  </footer>
+            <a href="#recorrido">Recorrido</a>
+
+            <a href="#horarios">Horarios</a>
+
+            <a href="#horarios">Reservar</a>
+
+            <a href="#accesibilidad">Accesibilidad</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero__content">
+
+            <p class="hero__label">
+
+                TRANSPORTE REGIONAL
+
+            </p>
+
+            <h1>
+
+                Conectando Buenos Aires
+                con el sudoeste
+
+            </h1>
+
+            <p>
+
+                Expreso Suroeste conecta diariamente
+                Ciudad de Buenos Aires,
+                Ezeiza,
+                Cañuelas,
+                Uribelarrea y Lobos mediante
+                un servicio pensado para estudiantes,
+                familias y viajeros frecuentes.
+
+            </p>
+
+            <div class="hero__actions">
+
+                <a href="#horarios" class="btn btn--primary">
+                    Consultar horarios
+                </a>
+
+                <a href="#recorrido" class="btn btn--secondary">
+                    Ver recorrido
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero__image">
+
+            <img src="colectivo-principal.jpg" alt="Unidad Expreso Suroeste">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- RECORRIDO -->
+
+    <section class="route" id="recorrido">
+
+        <div class="section-title">
+
+            <h2>Trayecto y paradas</h2>
+
+            <p>
+
+                Recorrido principal sobre Ruta 205.
+
+            </p>
+
+        </div>
+
+        <div class="route__grid">
+
+            <div class="route__map">
+
+                <iframe class="route__iframe"
+                    src="https://www.google.com/maps?q=Parque+Rivadavia+CABA+to+Lobos+Buenos+Aires&output=embed"
+                    loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
+
+                </iframe>
+
+            </div>
+
+            <div class="route__details">
+
+                <div class="route__stats">
+
+                    <div>
+
+                        <h3>120 km</h3>
+
+                        <p>Trayecto</p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>2h 20m</h3>
+
+                        <p>Duración</p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>5</h3>
+
+                        <p>Paradas</p>
+
+                    </div>
+
+                </div>
+
+                <ul class="stops">
+
+                    <li>
+                        Cabecera Almagro — Parque Rivadavia
+                    </li>
+
+                    <li>
+                        Parada Ezeiza — Centro de Trasbordo
+                    </li>
+
+                    <li>
+                        Terminal Cañuelas
+                    </li>
+
+                    <li>
+                        Uribelarrea — Acceso turístico
+                    </li>
+
+                    <li>
+                        Terminal Lobos
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- GALERIA -->
+
+    <section class="gallery">
+
+        <div class="section-title">
+
+            <h2>Conocé el recorrido</h2>
+
+            <p>
+
+                Principales puntos del trayecto.
+
+            </p>
+
+        </div>
+
+        <div class="gallery__grid">
+
+            <div>
+
+                <img src="almagro.jpg">
+
+                <p>Almagro</p>
+
+            </div>
+
+            <div>
+
+                <img src="ezeiza.jpg">
+
+                <p>Ezeiza</p>
+
+            </div>
+
+            <div>
+
+                <img src="canuelas.jpg">
+
+                <p>Cañuelas</p>
+
+            </div>
+
+            <div>
+
+                <img src="uribelarrea.jpg">
+
+                <p>Uribelarrea</p>
+
+            </div>
+
+            <div>
+
+                <img src="lobos.jpg">
+
+                <p>Lobos</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+   <section class="schedule" id="horarios">
+
+<div class="section-title">
+
+<h2>Horarios y reservas</h2>
+
+<p>
+
+Consultá salidas disponibles y reservá tu viaje.
+
+</p>
+
+</div>
+
+<div class="schedule__layout">
+
+
+<!-- IZQUIERDA -->
+
+<div class="schedule__table">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Salida</th>
+
+<th>Origen</th>
+
+<th>Destino</th>
+
+<th>Estado</th>
+
+<th>Tarifa</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+    <td>06:00</td>
+    <td>CABA</td>
+    <td>Lobos</td>
+    <td>A tiempo</td>
+    <td>$4200</td>
+</tr>
+
+<tr>
+    <td>07:30</td>
+    <td>CABA</td>
+    <td>Lobos</td>
+    <td>A tiempo</td>
+    <td>$4200</td>
+</tr>
+
+<tr>
+    <td>08:15</td>
+    <td>CABA</td>
+    <td>Cañuelas</td>
+    <td>Demorado</td>
+    <td>$3800</td>
+</tr>
+
+<tr>
+    <td>09:00</td>
+    <td>CABA</td>
+    <td>Lobos</td>
+    <td>A tiempo</td>
+    <td>$4200</td>
+</tr>
+
+<tr>
+    <td>10:30</td>
+    <td>CABA</td>
+    <td>Uribelarrea</td>
+    <td>A tiempo</td>
+    <td>$3900</td>
+</tr>
+
+<tr>
+    <td>12:00</td>
+    <td>CABA</td>
+    <td>Lobos</td>
+    <td>A tiempo</td>
+    <td>$4200</td>
+</tr>
+
+<tr>
+    <td>14:30</td>
+    <td>CABA</td>
+    <td>Cañuelas</td>
+    <td>A tiempo</td>
+    <td>$3800</td>
+</tr>
+
+<tr>
+    <td>16:00</td>
+    <td>CABA</td>
+    <td>Lobos</td>
+    <td>A tiempo</td>
+    <td>$4200</td>
+</tr>
+
+<tr>
+    <td>20:30</td>
+    <td>CABA</td>
+    <td>Lobos</td>
+    <td>Últimos lugares</td>
+    <td>$4200</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+
+<!-- DERECHA -->
+
+<div class="reservation">
+
+<h3>
+
+Reservar viaje
+
+</h3>
+
+<form>
+
+<input
+type="text"
+placeholder="Nombre completo"
+required
+>
+
+<input
+type="email"
+placeholder="Email"
+required
+>
+
+<select>
+
+<option>Origen</option>
+
+<option>Almagro</option>
+
+<option>Ezeiza</option>
+
+<option>Cañuelas</option>
+
+<option>Uribelarrea</option>
+
+<option>Lobos</option>
+
+</select>
+
+<select>
+
+<option>Destino</option>
+
+<option>Lobos</option>
+
+<option>Uribelarrea</option>
+
+<option>Cañuelas</option>
+
+<option>Ezeiza</option>
+
+<option>Almagro</option>
+
+</select>
+
+<input
+type="date"
+required
+>
+
+<input
+type="number"
+placeholder="Pasajeros"
+min="1"
+max="8"
+>
+
+<textarea
+rows="4"
+placeholder="Comentarios"
+></textarea>
+
+<button
+class="btn btn--primary"
+type="submit"
+>
+
+Solicitar reserva
+
+</button>
+
+</form>
+
+</div>
+
+
+</div>
+
+
+    <!-- UNIDADES -->
+
+    <section class="fleet">
+
+        <div class="section-title">
+
+            <h2>Nuestras unidades</h2>
+
+            <p>
+
+                Características del servicio.
+
+            </p>
+
+        </div>
+
+        <div class="fleet__grid">
+
+            <div>
+
+                <img src="interior.jpg">
+
+                <h3>Interior amplio</h3>
+
+                <p>
+
+                    Espacios cómodos para viajes regionales.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <img src="wifi.jpg">
+
+                <h3>Conectividad</h3>
+
+                <p>
+
+                    Disponibilidad de conexión durante el trayecto.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <img src="asientos.jpg">
+
+                <h3>Asientos adaptados</h3>
+
+                <p>
+
+                    Mayor comodidad y accesibilidad.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACCESIBILIDAD -->
+
+    <section class="accessibility" id="accesibilidad">
+
+        <div>
+
+            <h2>
+
+                Compromiso con la accesibilidad
+
+            </h2>
+
+            <ul>
+
+                <li>
+
+                    Rampa automatizada
+
+                </li>
+
+                <li>
+
+                    Espacios para movilidad reducida
+
+                </li>
+
+                <li>
+
+                    Señalización visual
+
+                </li>
+
+                <li>
+
+                    Información sonora
+
+                </li>
+
+                <li>
+
+                    Reserva de asistencia
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <img src="accesibilidad.jpg" alt="Accesibilidad">
+
+    </section>
+
+
+
+    <footer>
+
+        <h3>
+
+            Expreso Suroeste
+
+        </h3>
+
+        <p>
+
+            © 2026 Transporte regional.
+
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
