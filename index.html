@@ -31,7 +31,9 @@
 
             <a href="#horarios">Horarios</a>
 
-            <a href="#horarios">Reservar</a>
+            <a href="#horarios" class="btn btn--nav">
+                Reservar
+            </a>
 
         </nav>
 
@@ -247,353 +249,394 @@
 
 
 
-   <section class="schedule" id="horarios">
-
-<div class="section-title">
-
-<h2>Horarios y reservas</h2>
-
-<p>
-
-Consultá salidas disponibles y reservá tu viaje.
-
-</p>
-
-</div>
-
-<div class="schedule__layout">
-
-
-<!-- IZQUIERDA -->
-
-<div class="schedule__table">
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>Salida</th>
-
-<th>Origen</th>
-
-<th>Destino</th>
-
-<th>Estado</th>
-
-<th>Tarifa</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-    <td>06:00</td>
-    <td>CABA</td>
-    <td>Lobos</td>
-    <td>A tiempo</td>
-    <td>$4200</td>
-</tr>
-
-<tr>
-    <td>07:30</td>
-    <td>CABA</td>
-    <td>Lobos</td>
-    <td>A tiempo</td>
-    <td>$4200</td>
-</tr>
-
-<tr>
-    <td>08:15</td>
-    <td>CABA</td>
-    <td>Cañuelas</td>
-    <td>Demorado</td>
-    <td>$3800</td>
-</tr>
-
-<tr>
-    <td>09:00</td>
-    <td>CABA</td>
-    <td>Lobos</td>
-    <td>A tiempo</td>
-    <td>$4200</td>
-</tr>
-
-<tr>
-    <td>10:30</td>
-    <td>CABA</td>
-    <td>Uribelarrea</td>
-    <td>A tiempo</td>
-    <td>$3900</td>
-</tr>
-
-<tr>
-    <td>12:00</td>
-    <td>CABA</td>
-    <td>Lobos</td>
-    <td>A tiempo</td>
-    <td>$4200</td>
-</tr>
-
-<tr>
-    <td>14:30</td>
-    <td>CABA</td>
-    <td>Cañuelas</td>
-    <td>A tiempo</td>
-    <td>$3800</td>
-</tr>
-
-<tr>
-    <td>16:00</td>
-    <td>CABA</td>
-    <td>Lobos</td>
-    <td>A tiempo</td>
-    <td>$4200</td>
-</tr>
-
-<tr>
-    <td>20:30</td>
-    <td>CABA</td>
-    <td>Lobos</td>
-    <td>Últimos lugares</td>
-    <td>$4200</td>
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-
-
-<!-- DERECHA -->
-
-<div class="reservation">
-
-<h3>
-
-Reservar viaje
-
-</h3>
-
-<form>
-
-<input
-type="text"
-placeholder="Nombre completo"
-required
->
-
-<input
-type="email"
-placeholder="Email"
-required
->
-
-<select>
-
-<option>Origen</option>
-
-<option>Almagro</option>
-
-<option>Ezeiza</option>
-
-<option>Cañuelas</option>
-
-<option>Uribelarrea</option>
-
-<option>Lobos</option>
-
-</select>
-
-<select>
-
-<option>Destino</option>
-
-<option>Lobos</option>
-
-<option>Uribelarrea</option>
-
-<option>Cañuelas</option>
-
-<option>Ezeiza</option>
-
-<option>Almagro</option>
-
-</select>
-
-<input
-type="date"
-required
->
-
-<input
-type="number"
-placeholder="Pasajeros"
-min="1"
-max="8"
->
-
-<textarea
-rows="4"
-placeholder="Comentarios"
-></textarea>
-
-<button
-class="btn btn--primary"
-type="submit"
->
-
-Solicitar reserva
-
-</button>
-
-</form>
-
-</div>
-
-
-</div>
-
-
-    <!-- UNIDADES -->
-
-    <section class="fleet">
+    <section class="schedule" id="horarios">
 
         <div class="section-title">
 
-            <h2>Nuestras unidades</h2>
+            <h2>Horarios y reservas</h2>
 
             <p>
 
-                Características del servicio.
+                Consultá salidas disponibles y reservá tu viaje.
 
             </p>
 
         </div>
 
-        <div class="fleet__grid">
+        <div class="schedule__layout">
 
-            <div>
 
-                <img src="interior.jpg">
+            <!-- IZQUIERDA -->
 
-                <h3>Interior amplio</h3>
+            <div class="schedule__table">
 
-                <p>
+                <table>
 
-                    Espacios cómodos para viajes regionales.
+                    <thead>
 
-                </p>
+                        <tr>
+
+                            <th>Salida</th>
+
+                            <th>Origen</th>
+
+                            <th>Destino</th>
+
+                            <th>Estado</th>
+
+                            <th>Tarifa</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>06:00</td>
+                            <td>CABA</td>
+                            <td>Lobos</td>
+                            <td>A tiempo</td>
+                            <td>$4200</td>
+                        </tr>
+
+                        <tr>
+                            <td>07:30</td>
+                            <td>CABA</td>
+                            <td>Lobos</td>
+                            <td>A tiempo</td>
+                            <td>$4200</td>
+                        </tr>
+
+                        <tr>
+                            <td>08:15</td>
+                            <td>CABA</td>
+                            <td>Cañuelas</td>
+                            <td>Demorado</td>
+                            <td>$3800</td>
+                        </tr>
+
+                        <tr>
+                            <td>09:00</td>
+                            <td>CABA</td>
+                            <td>Lobos</td>
+                            <td>A tiempo</td>
+                            <td>$4200</td>
+                        </tr>
+
+                        <tr>
+                            <td>10:30</td>
+                            <td>CABA</td>
+                            <td>Uribelarrea</td>
+                            <td>A tiempo</td>
+                            <td>$3900</td>
+                        </tr>
+
+                        <tr>
+                            <td>12:00</td>
+                            <td>CABA</td>
+                            <td>Lobos</td>
+                            <td>A tiempo</td>
+                            <td>$4200</td>
+                        </tr>
+
+                        <tr>
+                            <td>14:30</td>
+                            <td>CABA</td>
+                            <td>Cañuelas</td>
+                            <td>A tiempo</td>
+                            <td>$3800</td>
+                        </tr>
+
+                        <tr>
+                            <td>16:00</td>
+                            <td>CABA</td>
+                            <td>Lobos</td>
+                            <td>A tiempo</td>
+                            <td>$4200</td>
+                        </tr>
+
+                        <tr>
+                            <td>20:30</td>
+                            <td>CABA</td>
+                            <td>Lobos</td>
+                            <td>Últimos lugares</td>
+                            <td>$4200</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
 
             </div>
 
-            <div>
 
-                <img src="wifi.jpg">
 
-                <h3>Conectividad</h3>
+            <!-- DERECHA -->
 
-                <p>
+            <div class="reservation">
 
-                    Disponibilidad de conexión durante el trayecto.
+                <h3>
 
-                </p>
+                    Reservar viaje
+
+                </h3>
+
+                <form>
+
+                    <input type="text" placeholder="Nombre completo" required>
+
+                    <input type="email" placeholder="Email" required>
+
+                    <select>
+
+                        <option>Origen</option>
+
+                        <option>Almagro</option>
+
+                        <option>Ezeiza</option>
+
+                        <option>Cañuelas</option>
+
+                        <option>Uribelarrea</option>
+
+                        <option>Lobos</option>
+
+                    </select>
+
+                    <select>
+
+                        <option>Destino</option>
+
+                        <option>Lobos</option>
+
+                        <option>Uribelarrea</option>
+
+                        <option>Cañuelas</option>
+
+                        <option>Ezeiza</option>
+
+                        <option>Almagro</option>
+
+                    </select>
+
+                    <input type="date" required>
+
+                    <input type="number" placeholder="Pasajeros" min="1" max="8">
+
+                    <textarea rows="4" placeholder="Comentarios"></textarea>
+
+                    <button class="btn btn--primary" type="submit">
+
+                        Solicitar reserva
+
+                    </button>
+
+                </form>
 
             </div>
 
-            <div>
-
-                <img src="asientos.jpg">
-
-                <h3>Asientos adaptados</h3>
-
-                <p>
-
-                    Mayor comodidad y accesibilidad.
-
-                </p>
-
-            </div>
 
         </div>
 
-    </section>
+
+        <!-- UNIDADES -->
+
+        <section class="fleet">
+
+            <div class="section-title">
+
+                <h2>Nuestras unidades</h2>
+
+                <p>
+
+                    Características del servicio.
+
+                </p>
+
+            </div>
+
+            <div class="fleet__grid">
+
+                <div>
+
+                    <img src="interior.jpg">
+
+                    <h3>Interior amplio</h3>
+
+                    <p>
+
+                        Espacios cómodos para viajes regionales.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <img src="wifi.jpg">
+
+                    <h3>Conectividad</h3>
+
+                    <p>
+
+                        Disponibilidad de conexión durante el trayecto.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <img src="asientos.jpg">
+
+                    <h3>Asientos adaptados</h3>
+
+                    <p>
+
+                        Mayor comodidad y accesibilidad.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-    <!-- ACCESIBILIDAD -->
+        <!-- ACCESIBILIDAD -->
 
-    <section class="accessibility" id="accesibilidad">
+        <section class="accessibility" id="accesibilidad">
 
-        <div>
+            <div>
 
-            <h2>
+                <h2>
 
-                Compromiso con la accesibilidad
+                    Compromiso con la accesibilidad
 
-            </h2>
+                </h2>
 
-            <ul>
+                <ul>
 
-                <li>
+                    <li>
 
-                    Rampa automatizada
+                        Rampa automatizada
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    Espacios para movilidad reducida
+                        Espacios para movilidad reducida
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    Señalización visual
+                        Señalización visual
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    Información sonora
+                        Información sonora
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    Reserva de asistencia
+                        Reserva de asistencia
 
-                </li>
+                    </li>
 
-            </ul>
+                </ul>
 
-        </div>
+            </div>
 
-        <img src="accesibilidad.jpg" alt="Accesibilidad">
+            <img src="accesibilidad.jpg" alt="Accesibilidad">
 
-    </section>
+        </section>
 
 
 
-    <footer>
+        <footer class="footer">
 
-        <h3>
+            <div class="footer__grid">
 
-            Expreso Suroeste
+                <div>
 
-        </h3>
+                    <h3>Expreso Suroeste</h3>
 
-        <p>
+                    <p>
 
-            © 2026 Transporte regional.
+                        Servicio regional que conecta Ciudad de Buenos Aires,
+                        Ezeiza, Cañuelas, Uribelarrea y Lobos.
 
-        </p>
+                    </p>
 
-    </footer>
+                </div>
+
+
+                <div>
+
+                    <h4>Accesos rápidos</h4>
+
+                    <nav class="footer__links">
+
+                        <a href="#inicio">Inicio</a>
+
+                        <a href="#recorrido">Recorrido</a>
+
+                        <a href="#horarios">Horarios</a>
+
+                        <a href="#accesibilidad">Accesibilidad</a>
+
+                    </nav>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Contacto</h4>
+
+                    <p>0800-555-205</p>
+
+                    <p>reservas@expresosuroeste.com</p>
+
+                    <p>Ciudad de Buenos Aires</p>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Horarios de atención</h4>
+
+                    <p>Lunes a Viernes</p>
+
+                    <p>08:00 — 20:00</p>
+
+                    <p>Sábados</p>
+
+                    <p>09:00 — 14:00</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer__bottom">
+
+                <p>
+
+                    © 2026 Expreso Suroeste · Todos los derechos reservados
+
+                </p>
+
+            </div>
+
+        </footer>
 
 </body>
 
